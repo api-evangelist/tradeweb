@@ -1,0 +1,62 @@
+vocabulary: 1.0.0
+info:
+  provider: Tradeweb
+  description: Vocabulary for Tradeweb electronic trading platform APIs covering execution,
+    market data, trade reporting, and integration.
+  created: '2026-04-17'
+  modified: '2026-04-17'
+operational:
+  apis:
+  - name: Tradeweb Trading API
+    namespace: tw-trading
+    status: active
+  - name: Tradeweb Python API
+    namespace: tw-python
+    status: active
+  - name: Tradeweb FIX API
+    namespace: tw-fix
+    status: active
+  - name: Tradeweb Market Data API
+    namespace: tw-data
+    status: active
+  - name: Tradeweb APA API
+    namespace: tw-apa
+    status: active
+  resources:
+  - name: quotes
+    description: Request for quote (RFQ) submissions and responses.
+  - name: trades
+    description: Executed trades and trade confirmations.
+  - name: orders
+    description: Trade orders and execution instructions.
+  - name: prices
+    description: Real-time and historical pricing data.
+  - name: instruments
+    description: Financial instrument reference data.
+  - name: reports
+    description: Trade reports for regulatory transparency.
+capability:
+  personas:
+  - id: trader
+    name: Institutional Trader
+  - id: quant
+    name: Quantitative Analyst
+  - id: portfolio-manager
+    name: Portfolio Manager
+  - id: compliance-officer
+    name: Compliance Officer
+  - id: integration-developer
+    name: Integration Developer
+  domains:
+  - name: execution
+    resources:
+    - quotes
+    - trades
+    - orders
+  - name: market-data
+    resources:
+    - prices
+    - instruments
+  - name: reporting
+    resources:
+    - reports
