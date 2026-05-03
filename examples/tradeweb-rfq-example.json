@@ -1,0 +1,39 @@
+{
+  "rfqId": "RFQ-20260503-9876543",
+  "instrument": "US Treasury 4.5% 2034",
+  "cusip": "912828YK0",
+  "isin": "US912828YK03",
+  "assetClass": "Government Bonds",
+  "side": "Buy",
+  "quantity": 5000000,
+  "currency": "USD",
+  "dealers": [
+    "DEALER-GS-001",
+    "DEALER-JPM-002",
+    "DEALER-BAML-003",
+    "DEALER-MS-004"
+  ],
+  "status": "Quoted",
+  "createdAt": "2026-05-03T14:30:00Z",
+  "expiresAt": "2026-05-03T14:30:30Z",
+  "quotes": [
+    {
+      "dealerId": "DEALER-GS-001",
+      "askPrice": 98.625,
+      "askYield": 4.68,
+      "quotedAt": "2026-05-03T14:30:05Z"
+    },
+    {
+      "dealerId": "DEALER-JPM-002",
+      "askPrice": 98.610,
+      "askYield": 4.69,
+      "quotedAt": "2026-05-03T14:30:07Z"
+    },
+    {
+      "dealerId": "DEALER-BAML-003",
+      "askPrice": 98.600,
+      "askYield": 4.70,
+      "quotedAt": "2026-05-03T14:30:10Z"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "tradeweb": "https://www.tradeweb.com/ns/",
+    "fixp": "https://www.fixtrading.org/ns/",
+    "finance": "https://schema.org/",
+
+    "ElectronicTrading": "tradeweb:ElectronicTrading",
+    "FixedIncomeInstrument": "tradeweb:FixedIncomeInstrument",
+    "Trade": "tradeweb:Trade",
+    "Quote": "tradeweb:Quote",
+    "Order": "tradeweb:Order",
+    "PriceData": "tradeweb:PriceData",
+    "TradeReport": "tradeweb:TradeReport",
+    "Allocation": "tradeweb:Allocation",
+    "RFQSession": "tradeweb:RFQSession",
+    "AiEXExecution": "tradeweb:AiEXExecution",
+
+    "Organization": "schema:Organization",
+    "FinancialProduct": "schema:FinancialProduct",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "identifier": "schema:identifier",
+
+    "tradeId": "tradeweb:tradeId",
+    "assetClass": "tradeweb:assetClass",
+    "instrument": "tradeweb:instrument",
+    "cusip": "tradeweb:cusip",
+    "isin": "tradeweb:isin",
+    "price": "schema:price",
+    "quantity": "tradeweb:quantity",
+    "counterpartyId": "tradeweb:counterpartyId",
+    "executionType": "tradeweb:executionType",
+    "settlementDate": "tradeweb:settlementDate",
+    "tradeDate": "tradeweb:tradeDate",
+    "reportingStatus": "tradeweb:reportingStatus",
+    "mifdiiApplicable": "tradeweb:mifidiiApplicable"
+  }
+}

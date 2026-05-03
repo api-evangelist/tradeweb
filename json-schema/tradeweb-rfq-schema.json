@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/tradeweb/main/json-schema/tradeweb-rfq-schema.json",
+  "title": "Tradeweb RFQ",
+  "description": "Schema for a Request for Quote (RFQ) session on the Tradeweb platform, representing a competitive pricing request sent to multiple dealers.",
+  "type": "object",
+  "properties": {
+    "rfqId": {
+      "type": "string",
+      "description": "Unique RFQ session identifier.",
+      "example": "RFQ-20260503-9876543"
+    },
+    "instrument": {
+      "type": "string",
+      "description": "Instrument for which quotes are requested.",
+      "example": "US Treasury 4.5% 2034"
+    },
+    "assetClass": {
+      "type": "string",
+      "description": "Asset class of the instrument.",
+      "example": "Government Bonds"
+    },
+    "side": {
+      "type": "string",
+      "enum": ["Buy", "Sell", "Both"],
+      "description": "Requested quote side.",
+      "example": "Buy"
+    },
+    "quantity": {
+      "type": "number",
+      "description": "Notional quantity for the quote.",
+      "example": 5000000
+    },
+    "currency": {
+      "type": "string",
+      "description": "ISO 4217 currency code.",
+      "example": "USD"
+    },
+    "dealers": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "List of dealer counterparty IDs invited to respond.",
+      "example": ["DEALER-GS-001", "DEALER-JPM-002", "DEALER-BAML-003"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["Open", "Quoted", "Traded", "Expired", "Cancelled"],
+      "description": "Current status of the RFQ.",
+      "example": "Quoted"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the RFQ was created.",
+      "example": "2026-05-03T14:30:00Z"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the RFQ expires.",
+      "example": "2026-05-03T14:30:30Z"
+    },
+    "quotes": {
+      "type": "array",
+      "description": "Dealer quotes received in response to the RFQ.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "dealerId": {"type": "string"},
+          "bidPrice": {"type": "number"},
+          "askPrice": {"type": "number"},
+          "bidYield": {"type": "number"},
+          "askYield": {"type": "number"},
+          "quotedAt": {"type": "string", "format": "date-time"}
+        }
+      }
+    }
+  },
+  "required": ["rfqId", "instrument", "assetClass", "side", "quantity", "currency", "status"]
+}

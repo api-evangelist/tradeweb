@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/tradeweb/main/json-schema/tradeweb-trade-schema.json",
+  "title": "Tradeweb Trade",
+  "description": "Schema for an electronically executed trade on the Tradeweb platform across fixed income, derivatives, ETF, and money market products.",
+  "type": "object",
+  "properties": {
+    "tradeId": {
+      "type": "string",
+      "description": "Unique Tradeweb trade identifier.",
+      "example": "TW-20260503-1234567"
+    },
+    "assetClass": {
+      "type": "string",
+      "description": "Asset class of the traded instrument.",
+      "enum": [
+        "Government Bonds",
+        "Corporate Bonds",
+        "ETFs",
+        "Interest Rate Swaps",
+        "Credit Default Swaps",
+        "Repo",
+        "Money Market",
+        "Municipal Bonds",
+        "Agency Bonds"
+      ],
+      "example": "Government Bonds"
+    },
+    "instrument": {
+      "type": "string",
+      "description": "Instrument identifier or description.",
+      "example": "US Treasury 4.5% 2034"
+    },
+    "cusip": {
+      "type": "string",
+      "description": "CUSIP identifier for US instruments.",
+      "pattern": "^[A-Z0-9]{9}$",
+      "example": "912828YK0"
+    },
+    "isin": {
+      "type": "string",
+      "description": "ISIN identifier for international instruments.",
+      "pattern": "^[A-Z]{2}[A-Z0-9]{10}$",
+      "example": "US912828YK03"
+    },
+    "tradeDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the trade was executed.",
+      "example": "2026-05-03"
+    },
+    "settlementDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Contractual settlement date.",
+      "example": "2026-05-05"
+    },
+    "quantity": {
+      "type": "number",
+      "description": "Trade notional quantity.",
+      "example": 10000000
+    },
+    "currency": {
+      "type": "string",
+      "description": "ISO 4217 currency code.",
+      "example": "USD"
+    },
+    "price": {
+      "type": "number",
+      "description": "Execution price.",
+      "example": 98.5
+    },
+    "yield": {
+      "type": "number",
+      "description": "Yield at execution for fixed income instruments.",
+      "example": 4.72
+    },
+    "executionType": {
+      "type": "string",
+      "description": "How the trade was executed on Tradeweb.",
+      "enum": ["RFQ", "ClickToTrade", "AiEX", "StreamingPrice"],
+      "example": "RFQ"
+    },
+    "counterpartyId": {
+      "type": "string",
+      "description": "Identifier of the dealer counterparty.",
+      "example": "DEALER-GS-001"
+    },
+    "side": {
+      "type": "string",
+      "enum": ["Buy", "Sell"],
+      "description": "Trade direction from the client perspective.",
+      "example": "Buy"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["Executed", "Cancelled", "Pending", "Reported"],
+      "description": "Current lifecycle status of the trade.",
+      "example": "Executed"
+    },
+    "mifidiiReported": {
+      "type": "boolean",
+      "description": "Whether the trade has been reported via MiFID II APA.",
+      "example": true
+    }
+  },
+  "required": ["tradeId", "assetClass", "instrument", "tradeDate", "quantity", "currency", "executionType", "side", "status"]
+}
