@@ -178,7 +178,7 @@ common:
   url: rules/tradeweb-spectral-rules.yml
 - type: Vocabulary
   url: vocabulary/tradeweb-vocabulary.yaml
-- type: JSONLd
+- type: JSONLD
   url: json-ld/tradeweb-context.jsonld
 - type: JSONSchema
   url: json-schema/tradeweb-trade-schema.json
