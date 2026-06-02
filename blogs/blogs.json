@@ -2,13 +2,10 @@
   "repo": "tradeweb",
   "feeds": [
     {
-      "source": "https://www.tradeweb.com/newsroom/media-center/insights/",
-      "feed_url": "",
-      "title": "",
-      "saved": 0,
-      "error": "no_feed"
+      "source": "https://www.tradeweb.com/contact/",
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-05-17T20:48:52Z",
+  "fetched": "2026-06-01T23:35:02Z",
   "post_count": 0
 }
