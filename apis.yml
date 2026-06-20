@@ -6,7 +6,7 @@ description: Tradeweb Markets is a leading global operator of electronic marketp
   integration with order management and risk systems across more than 40 fixed income
   and derivatives products.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/tradeweb/refs/heads/main/apis.yml
 created: '2026-03-16'
 modified: '2026-05-03'
