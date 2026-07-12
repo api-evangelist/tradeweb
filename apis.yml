@@ -96,6 +96,8 @@ apis:
     - type: Documentation
       url: https://www.tradeweb.com/our-markets/data-analytics/trade-reporting-services-apa/
 common:
+  - type: DomainSecurity
+    url: security/tradeweb-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/tradeweb
   - type: Portal
