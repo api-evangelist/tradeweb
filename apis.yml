@@ -78,7 +78,6 @@ apis:
       management systems, risk systems, and third-party trading platforms. Industry-standard
       FIX messaging for trade execution and straight-through processing.
     humanURL: https://www.tradeweb.com/our-markets/institutional/integration/
-    baseURL: fix://tradeweb.com
     tags:
     - FIX Protocol
     - Integration
