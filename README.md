@@ -64,78 +64,148 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Tradeweb Markets is a leading global operator of electronic marketplaces for rates, credit, equities, and money markets. The platform provides APIs for electronic trading execution, market data, trade reporting, and integration with order management and risk systems across more than 40 fixed income and derivatives products.
+Tradeweb Markets is a leading global operator of electronic marketplaces for rates, credit, equities, and money markets. The platform provides APIs for electronic trading execution, straight-through processing, market data, trade reporting, and integration with order management and risk systems across more than 40 fixed income and derivatives products.
 
-**Website:** https://www.tradeweb.com/  
-**Integration:** https://www.tradeweb.com/our-markets/institutional/integration/  
-**Client Area:** https://www.tradeweb.com/client-area/
+**Areas:** Electronic Trading · Financial Markets · Fixed Income · Market Data · OTC Trading
 
-## APIs
+## Tradeweb on APIs.io
 
-Tradeweb offers client-specific API access through a dedicated development team. APIs are not publicly documented and require a client relationship.
+Everything profiled for Tradeweb is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tradeweb/](https://apis.io/providers/tradeweb/)** — or go straight to one of the APIs or properties below.
 
-| API | Description |
-|-----|-------------|
-| Trading API | Electronic execution across fixed income, derivatives, and ETF markets via RFQ, click-to-trade, and AiEX workflows |
-| Python API | Direct connection between Python trading models and Tradeweb execution |
-| FIX API | FIX protocol connectivity for OMS, EMS, and STP integration |
-| Market Data API | Real-time and historical OTC pricing across 20+ asset classes |
-| APA Trade Reporting API | MiFID II post-trade transparency reporting via Approved Publication Arrangement |
+### APIs (5)
 
-## Artifacts
+- [Tradeweb Trading API](https://apis.io/apis/tradeweb/trading-api/) — Electronic trading API for executing trades across fixed income, derivatives, and ETF markets. Supports RFQ (Request for Quote), click-to-trade, and…
+- [Tradeweb Python API](https://apis.io/apis/tradeweb/python-api/) — Python API enabling seamless integration between trading strategies and Tradeweb execution. Allows direct connection between Python-coded trading models and…
+- [Tradeweb FIX API](https://apis.io/apis/tradeweb/fix-api/) — FIX protocol connectivity for electronic trading integration with order management systems, risk systems, and third-party trading platforms.…
+- [Tradeweb Market Data API](https://apis.io/apis/tradeweb/market-data-api/) — Real-time and historical market data API providing independent pricing information and benchmark OTC pricing data across more than 20 asset classes…
+- [Tradeweb APA Trade Reporting API](https://apis.io/apis/tradeweb/apa-api/) — Approved Publication Arrangement (APA) API enabling market participants to meet MiFID II post-trade transparency requirements. Supports real-time trade…
 
-### Spectral Rules
+### Published properties
 
-| File | Description |
-|------|-------------|
-| [tradeweb-spectral-rules.yml](rules/tradeweb-spectral-rules.yml) | Spectral ruleset enforcing Tradeweb API conventions |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### JSON Schemas
+#### JSON Schema (2)
 
-| File | Description |
-|------|-------------|
-| [tradeweb-trade-schema.json](json-schema/tradeweb-trade-schema.json) | Schema for executed trade data |
-| [tradeweb-rfq-schema.json](json-schema/tradeweb-rfq-schema.json) | Schema for RFQ session and quotes |
+The data models the API reads and writes.
 
-### JSON Structure
+- [Tradeweb RFQ](https://apis.io/schemas/tradeweb/tradeweb-rfq/)
+- [Tradeweb Trade](https://apis.io/schemas/tradeweb/tradeweb-trade/)
 
-| File | Description |
-|------|-------------|
-| [tradeweb-trade-structure.json](json-structure/tradeweb-trade-structure.json) | Structure documentation for trade objects |
+#### JSON Structure (1)
 
-### JSON-LD
+Data models expressed in JSON Structure.
 
-| File | Description |
-|------|-------------|
-| [tradeweb-context.jsonld](json-ld/tradeweb-context.jsonld) | JSON-LD context for Tradeweb linked data semantics |
+- [Tradeweb Trade Structure](https://apis.io/json-structure/tradeweb/tradeweb-trade-structure/)
 
-### Examples
+#### JSON-LD (1)
 
-| File | Description |
-|------|-------------|
-| [tradeweb-rfq-example.json](examples/tradeweb-rfq-example.json) | Example RFQ session with dealer quotes |
+Linked-data contexts for the provider's vocabulary.
 
-### Vocabulary
+- [Tradeweb Context](https://apis.io/jsonld/tradeweb/tradeweb-context/)
 
-| File | Description |
-|------|-------------|
-| [tradeweb-vocabulary.yaml](vocabulary/tradeweb-vocabulary.yaml) | Domain vocabulary for Tradeweb electronic trading concepts |
+#### Vocabulary (1)
 
-## Features
+The provider's domain terms, defined.
 
-| Name | Description |
-|------|-------------|
-| Request for Quote (RFQ) | Send RFQs to multiple dealers simultaneously for competitive pricing on fixed income and derivatives. |
-| Automated Intelligent Execution (AiEX) | Automated trade execution with pre-defined rules for straight-through processing. |
-| Click-to-Trade | One-click trade execution on streaming dealer prices. |
-| Market Data | Real-time and historical pricing data across 20+ asset classes. |
-| Trade Reporting (APA) | MiFID II compliant post-trade transparency reporting via Approved Publication Arrangement. |
-| Straight-Through Processing | Automated post-trade processing from execution to settlement. |
-| Python API | Direct connection between Python trading models and Tradeweb execution. |
-| FIX Connectivity | Industry-standard FIX protocol integration with OMS, EMS, and risk systems. |
-| Multi-Asset Coverage | Trading across rates, credit, equities, ETFs, and money markets on a single platform. |
-| Pre-Trade Analytics | Transaction cost analysis and liquidity analytics before trade execution. |
+- [Tradeweb Vocabulary](https://apis.io/vocabularies/tradeweb/tradeweb-vocabulary/)
 
-## Maintainers
+#### Examples (1)
 
-- **Kin Lane** (kin@apievangelist.com)
+Example requests and responses.
+
+- [Tradeweb Rfq Example](https://apis.io/examples/tradeweb/tradeweb-rfq-example/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Tradeweb — jsonschema rules](https://apis.io/rules/tradeweb/tradeweb-jsonschema-spectral-rules/)
+- [Tradeweb API Rules](https://apis.io/rules/tradeweb/tradeweb-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Tradeweb Domain Security](https://apis.io/security/tradeweb/tradeweb-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Tradeweb Plans Pricing](https://apis.io/plans/tradeweb/tradeweb-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Tradeweb Rate Limits](https://apis.io/rate-limits/tradeweb/tradeweb-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Tradeweb Finops](https://apis.io/finops/tradeweb/tradeweb-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.tradeweb.com/)
+- [Documentation](https://www.tradeweb.com/our-markets/institutional/integration/)
+- [Support](https://www.tradeweb.com/contact/)
+- [Blog](https://www.tradeweb.com/newsroom/media-center/insights/)
+- [Terms of service](https://www.tradeweb.com/terms-of-use/)
+- [Privacy policy](https://www.tradeweb.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 17.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 10.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/tradeweb/](https://apis.io/providers/tradeweb/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Tradeweb: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tradeweb/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
